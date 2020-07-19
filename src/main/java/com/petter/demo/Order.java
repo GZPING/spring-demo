@@ -1,5 +1,7 @@
 package com.petter.demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.math.BigDecimal;
 
 /**
@@ -14,6 +16,7 @@ public class Order {
 
     private BigDecimal price;
 
+    @Autowired
     private User user;
 
     public Integer getId() {

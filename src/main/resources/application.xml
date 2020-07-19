@@ -8,4 +8,10 @@
 		<constructor-arg index="0" value="GD"/>
 		<constructor-arg index="1" value="sex"/>
 	</bean>
+	<bean id="ordre" class="com.petter.demo.Order">
+		<property name="id" value="10"/>
+		<property name="orderName" value="order1"/>
+		<property name="price" value="100.11"/>
+		<property name="user" ref="user"/>
+	</bean>
 </beans>
